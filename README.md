@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## VegHead
 
-## Available Scripts
+### Introduction
 
-In the project directory, you can run:
+**VegHead**, is a single-page React app using Yelp's API to connect a user with the *best matched* and *highest rated* restaurants in a city or location (e.g. NE Portland) chosen by the user.
 
-### `npm start`
+This app was originally part of a React course at Code Academy but is refactored and personalized here as "VegHead".
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Sample UI - tablet](./screenshots/sample_ui_tablet.png)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<hr />
 
-### `npm test`
+##### Start-up Server
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the server, NPM or Yarn must be installed.
 
-### `npm run build`
+Open up the terminal and go to the project directory.  Inside of the project directory, run:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+`npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you have Yarn installed run:
 
-### `npm run eject`
+`yarn start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project was built using *Create React App*.  For complete technical details click [Create React App](./docs/#.md)
+<hr />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Technical Components
+- Flexbox  
+- Media queries used to build the *responsive design*.
+- JavaScript (ECMASript 6)
+- React 16.8.3
+<hr />
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Picture of React Component Map
+![breakdown](./screen_shots/#.jpeg)
+<hr />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Pictures of Responsive Design
+###### Phone
 
-## Learn More
+![phone view](./screen_shots/#.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+###### Tablet
+![tablet view](./screen_shots/#.png)
+<strong>Note</strong>: Some chord buttons are matched brown, purple, blue indicating these are enharmonic spellings of the same chord.
 
-### Code Splitting
+###### Desktop
+![desktop view](./screen_shots/#.png)
+<hr />
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Future Features
+- Add Modal with Google map
+- Add Favorites menu - store in local storage for now
