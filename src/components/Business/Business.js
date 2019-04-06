@@ -1,13 +1,6 @@
-/*
-The <Business /> component represents how a business (i.e. a restaurant)
-in Ravenous will be formatted and styled.
-created by Steve Hanlon Oct 15, 2017
-*/
-
 import React from 'react';
 import './Business.css';
 
-// React component called Business
 class Business extends React.Component {
 
   render() {
@@ -25,6 +18,9 @@ class Business extends React.Component {
             coordinate_lat,
             coordinate_long } = this.props.business;
     let link = `https://www.google.com/maps/search/?api=1&query=${coordinate_lat},${coordinate_long}&query_place_id=${id}`;
+    let link2 = `https://www.google.com/maps/search/?api=1&query=${name}`;
+    let reviewLink = `https://api.yelp.com/v3/businesses/${id}/reviews`
+
     return (
       <div className="Business">
         <div className="image-container">
@@ -33,7 +29,7 @@ class Business extends React.Component {
         <h2>{ name } <span className={!isclosed ? "isopen"  : "isclosed"}>{ !isclosed ? "Open" : "Closed" }</span></h2>
         <div className="Business-information">
           <div className="Business-address">
-            <p><a href={link} target="_blank" rel="noopener noreferrer">{ address }</a></p>
+            <p><a href={link2} target="_blank" rel="noopener noreferrer">{ address }</a></p>
             <p>{ city }</p>
             <p>{ state } { zipCode }</p>
           </div>

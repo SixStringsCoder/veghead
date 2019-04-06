@@ -34,6 +34,9 @@ This project was built using *Create React App*.  For complete technical details
 - React 16.8.3
 <hr />
 
+##### Attribution
+[UI background picture by PXHere](https://pxhere.com/en/photo/1206442)
+
 #### Picture of React Component Map
 ![breakdown](./screen_shots/#.jpeg)
 <hr />

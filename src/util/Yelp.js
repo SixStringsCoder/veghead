@@ -1,6 +1,6 @@
 const clientId = 'MFVKXsRqmbkGZcS52xV8ow';
 const secret = 'dCD2U6l73tQkqFDYHI99wunMeHL8RtVfq9YG26mHrLl0qjZXOJf5tW24Lb3QowkG';
-let accessToken = [hidden];
+let accessToken = '';
 
 const Yelp = {
   // Retrieves an access token from Yelp API to authenticate requests and retrieve data

@@ -11,12 +11,12 @@ const sortByOptions = {
 
 class SearchBar extends React.Component {
     state = {
-      term: 'vegetarian', // search term located in the search input (e.g. Pizza, Noodles)
-      location: 'Portland', //location entered in the search input
+      term: 'vegetarian', // search term located in the search input (e.g. Pizza, Noodles); default is vegetarian
+      location: 'Portland', //location entered in the search input; default is Portland
       sortBy: 'best_match'
     };
 
-    // returns the current CSS class 'active' for a the sortBy option, highlighting selected menu item in tan
+    // returns the current CSS class 'active' for the sortBy option, highlighting selected menu item
     getSortByClass = (sortByOption) => {
       if (this.state.sortBy === sortByOption) {
         return 'active';

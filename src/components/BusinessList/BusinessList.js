@@ -14,5 +14,4 @@ const BusinessList = props => {
   );
 }
 
-// exporting because this component will need to be rendered by another component
 export default BusinessList;

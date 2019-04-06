@@ -1,10 +1,3 @@
-/*
-This is a restaurant search app called VegHead which queries the Yelp API for results.
-This app uses React 16, ES 6, and fetch()
-created by Steve Hanlon Oct 15, 2017
-updated April 2019
-*/
-
 import React, { Component } from 'react';
 import './App.css';
 import BusinessList from './components/BusinessList/BusinessList';
@@ -12,11 +5,14 @@ import SearchBar from './components/SearchBar/SearchBar';
 import Yelp from './util/Yelp';
 
 class App extends Component {
-
     state = {
       businesses: []
     };
 
+    // Load some default choices based on vegetarian restaurants
+    componentDidMount() {
+      return this.searchYelp(this.term="vegetarian", this.location="Portland", this.sortBy="rating")
+    }
 
   searchYelp = (term, location, sortBy) => {
     Yelp.search(term, location, sortBy).then(businesses => {
