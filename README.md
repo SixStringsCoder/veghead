@@ -2,7 +2,9 @@
 
 ### Introduction
 
-**VegHead**, is a single-page React app using Yelp's API to connect a user with the *best matched* and *highest rated* restaurants in a city or location (e.g. NE Portland) chosen by the user.
+**VegHead**, is a single-page React app using Yelp's API to connect a user with the *best matched*, *highest rated*, *Most Reviewed* restaurants in a city or location (e.g. NE Portland) chosen by the user.
+
+The page loads with default vegetarian restaurants with *Most Reviews* settings.
 
 This app was originally part of a React course at Code Academy but is refactored and personalized here as "VegHead".
 
@@ -44,17 +46,17 @@ This project was built using *Create React App*.  For complete technical details
 #### Pictures of Responsive Design
 ###### Phone
 
-![phone view](./screen_shots/#.png)
+![phone view](./screenshots/phone.jpg)
 
 
 ###### Tablet
-![tablet view](./screen_shots/#.png)
-<strong>Note</strong>: Some chord buttons are matched brown, purple, blue indicating these are enharmonic spellings of the same chord.
+![tablet view](./screenshots/tablet.jpg)
+
 
 ###### Desktop
-![desktop view](./screen_shots/#.png)
+![desktop view](./screenshots/desktop.jpg)
 <hr />
 
 #### Future Features
-- Add Modal with Google map
-- Add Favorites menu - store in local storage for now
+- Move Google map to Modal pop-up
+- Add Favorites menu - start by storing in local storage
